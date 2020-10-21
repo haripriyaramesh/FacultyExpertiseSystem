@@ -1,0 +1,77 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function validate()
+{
+var usn=document.getElementById("eid").value;
+//document.writeln(usn);
+
+
+submitOK="true";
+
+var reg=/^\d((AR|ar)|(BT|bt)|(CH|ch)|(CV|cv)|(CS|cs)|(EE|ee)|(EC|ec)|(IM|im)|(IS|is)|(IT|it)|(ME|me)|(TE|te))\d{3}$/;
+
+//var reg1=/^\d{1}[R|r][V|v]\d{2}((MCA/mca))\d{2}$/;
+
+
+
+if (!usn.match(reg))
+ {
+ alert("The usn must be in this format IS001");
+ submitOK="false";
+}
+
+if (submitOK=="false")
+ {
+ return false;
+ }
+}
+</script>
+
+<title>
+Faculty Profile
+</title>
+</head>
+<body background = "college1.jpg">
+
+
+<center><h1><font color=#ECF0F1><br><br>Registration Form</font></h1></center>
+
+<form method="post"  action="login1.php" onsubmit="return validate()">
+<center><table border="10" bordercolor="white" bgcolor="white">
+
+<tr><td colspan=2><font color=#B03A2E>Enter your details for creating account</td></tr>
+
+
+<tr><td><font color=#1F618D><b>User full name*</b></font></td><td><input type=name name="fname" size=30 maxlength=50 required></td></tr>
+
+<tr><td><font color=#1F618D><b>Login name( Provide email id)*</b></font></td><td><input type=email name="uname" size=64 maxlength=64 required></td></tr>
+
+<tr><td><font color=#1F618D><b>Password*</b></font></td><td><input type=password name="pwd" size=50 maxlength=50 required></td></tr>
+
+<tr><td><font color=#1F618D><b>Confirm Password*</b></font></td><td><input type=password name="pwd1" size=50 maxlength=50 required></td></tr>
+
+<tr><td><font color=#1F618D><b>Employee ID*</b></font></td><td><input type=name name="eid" size=6 maxlength=5 required></td></tr>
+
+<tr><td><font color=#1F618D><b>Date of Birth*</b></font></td><td><input type=date name="dob" size=10 maxlength=8 required></td></tr>
+
+
+<tr><td><font color=#1F618D><b>Designation*</b></font></td><td><input type=name name="desg" size=25 maxlength=15 required></td></tr>
+<tr><td colspan=2><font color=#B03A2E>Fields with * are Mandatory</td></tr>
+
+</table>
+
+<br><input type="submit" value="Register">
+
+
+
+
+</center>
+
+</form>
+</body>
+</html>
+
+
+

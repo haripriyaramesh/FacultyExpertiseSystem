@@ -1,0 +1,64 @@
+<html>
+<head>
+
+<title>
+Book/Chapter Published Details
+</title>
+</head>
+<body background = "college1.jpg">
+<center>
+<center><h1><font color=white>Books or Chapter Details</font></h1></center>
+
+<form method="post"  action="book.php" enctype="multipart/form-data">
+<center><table border="10" bordercolor="white" bgcolor="white">
+<tr><td colspan=2><font color=#B03A2E>Enter the details of Books or Chapters published</td></tr>
+
+<tr>
+<td><font color=#1F618D><b>Role*</td>
+<td><select name="role" size=4>
+<option>Editor</option>Editor
+<option>Author</option>Author
+<option>Reviewer</option>Reviewer
+<option>Others</option>others
+</select>
+</td>
+
+<tr>
+<td><font color=#1F618D><b>Book or Chapter*</td>
+<td><select name="bc" size=2>
+<option>Book</option>Book
+<option>Chapter</option>Chapter
+</select>
+</td>
+
+<tr><td><font color=#1F618D><b>Name the Chapters(Authored/Reviewed/Edited)</b></font></td><td><input type=name name="chapter" size=20 maxlength=18></td></tr>
+
+<tr><td><font color=#1F618D><b>Title of the Book*</b></font></td><td><input type=name name="title" size=100 maxlength=100></td></tr>
+<tr><td><font color=#1F618D><b>Edition</b></font></td><td><input type=name name="edition" size=2 maxlength=2></td></tr>
+<tr><td><font color=#1F618D><b>Other Authors involved</b></font></td><td><input type=name name="author2" size=25 maxlength=25></td></tr>
+<tr><td><font color=#1F618D><b>Name of Publisher*</b></font></td><td><input type=name name="pub_name" size=50 maxlength=50></td></tr>
+<tr><td><font color=#1F618D><b>ISBN*</b></font></td><td><input type=name name="isbn" size=20 maxlength=20 requi#B03A2E></td></tr>
+<tr><td><font color=#1F618D><b>Month and year of Publishing*</b></font></td><td><input type=name name="year" size=12 maxlength=12></td></tr>
+<td>
+<font color=#1F618D><b>Upload the book/chapters</b></font>
+<input type="hidden" name="MAX_FILE_SIZE" value="2000000">
+<input name="userfile" type="file" id="userfile"> 
+</td>
+<td width="80"><input name="upload" type="submit" class="box" id="upload" value=" Upload "></td>
+<tr><td colspan=2><font color=#B03A2E>Fields with * are Mandatory</td></tr>
+
+</table>
+
+<input type="submit" value="Submit">
+
+
+
+
+</center>
+
+</form>
+</body>
+</html>
+
+
+

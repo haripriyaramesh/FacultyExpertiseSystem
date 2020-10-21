@@ -1,0 +1,73 @@
+<html>
+<head>
+
+<title>
+Conference Details
+</title>
+</head>
+<body background = "college1.jpg">
+<center>
+<center><h1><font color=white>Conference Paper Details</font></h1></center>
+
+<form method="post"  action="conference.php">
+<center><table border="10" bordercolor="white" bgcolor="white">
+<tr><td colspan=2><font color=#B03A2E>Enter the details of papers you have presented at the Conference</td></tr>
+
+<tr>
+<td><font color=#1F618D><b>Type of the Confernce*</td>
+
+<td><select name="ctype" size=2>
+<option>National</option>N
+<option>International</option>I
+</select>
+</td>
+
+<tr><td><font color=#1F618D><b>Research area*</b></font></td><td><input type=name name="rarea" size=20 maxlength=20></td></tr>
+<tr><td><font color=#1F618D><b>Title of the Paper</b></font></td><td><input type=name name="prj_title" size=100 maxlength=100></td></tr>
+<tr><td><font color=#1F618D><b>Name of the Conference*</b></font></td><td><input type=name name="cname" size=100 maxlength=100></td></tr>
+<tr><td><font color=#1F618D><b>Conference date from*</b></font></td><td><input type=name name="fdate" size=12 maxlength=12></td></tr>
+<tr><td><font color=#1F618D><b>Conference date to*</b></font></td><td><input type=date name="tdate" size=12 maxlength=12></td></tr>
+<tr><td><font color=#1F618D><b>Conference Venue*</b></font></td><td><input type=date name="venue" size=25 maxlength=25></td></tr>
+<tr><td><font color=#1F618D><b>Author 1(Your Name)*</b></font></td><td><input type=name name="author1" size=25 maxlength=25></td></tr>
+<tr><td><font color=#1F618D><b>Other Author</b></font></td><td><input type=name name="author2" size=25 maxlength=25></td></tr>
+<tr><td><font color=#1F618D><b>Pages*</b></font></td><td><input type=name name="pages" size=10 maxlength=10></td></tr>
+<tr><td><font color=#1F618D><b>Abstract*</b></font></td><td><input type=name name="abstract" size=100 maxlength=100></td></tr>
+<tr><td><font color=#1F618D><b>URL</b></font></td><td><input type=name name="url" size=50 maxlength=50></td></tr>
+<td><font color=#1F618D><b>Awards/Recognition*
+<script type="text/javascript">
+function CheckColors(val){
+ var element=document.getElementById('color');
+ if(val=='pick a color'||val=='others')
+   element.style.display='block';
+ else  
+   element.style.display='none';
+}
+
+</script> 
+</head>
+<body>
+  <select name="award" onchange='CheckColors(this.value);'> 
+    <option>pick an award</option>  
+    <option value="red">Best Paper</option>
+    <option value="blue">Best award</option>
+    <option value="others">others</option>
+  </select>
+<input type="text" name="color" id="color" style='display:none;'/>
+
+<tr><td colspan=2><font color=#B03A2E>Fields with * are Mandatory</td></tr>
+
+</table>
+
+<input type="submit" value="Submit">
+
+
+
+
+</center>
+
+</form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,55 @@
+<html>
+<head>
+
+<title>
+Consultancy Details
+</title>
+</head>
+<body background = "college1.jpg">
+<center>
+<center><h1><font color=white>Consultancy Details</font></h1></center>
+
+<form method="post"  action="consultancy.php">
+<center><table border="10" bordercolor="white" bgcolor="white">
+<tr><td colspan=2><font color=#B03A2E>Enter the details of Consultancy undertaken</td></tr>
+
+
+<tr><td><font color=#1F618D><b>Name of the Client*</b></font></td><td><input type=name name="client" size=80 maxlength=80></td></tr>
+<tr><td><font color=#1F618D><b>Title of the work*</b></font></td><td><input type=name name="title" size=80 maxlength=80></td></tr>
+
+<tr><td><font color=#1F618D><b>Duration from (start date)*</b></font></td><td><input type=date name="sdate" size=12 maxlength=12></td></tr>
+<tr><td><font color=#1F618D><b>Duration to (completion date)</b></font></td><td><input type=date name="cdate" size=12 maxlength=12></td></tr>
+<tr><td><font color=#1F618D><b>Faculty 1 - Faculty involved (Your name)*</b></font></td><td><input type=name name="f1" size=50 maxlength=50></td></tr>
+<tr><td><font color=#1F618D><b>Faculty 2 (Other Faculties involved)</b></font></td><td><input type=name name="f2" size=50 maxlength=50></td></tr>
+<tr><td><font color=#1F618D><b>Revenue Generated*</b></font></td><td><input type=name name="revenue" size=15 maxlength=15></td></tr>
+<tr><td><font color=#1F618D><b>Brief Summary of the work undertaken</b></font></td><td><input type=name name="summary" size=100 maxlength=100></td></tr>
+<tr><td><font color=#1F618D><b>Facilities/Labs used for consultancy</b></font></td><td><input type=name name="lab" size=100 maxlength=100></td></tr>
+<script type="text/javascript">
+function CheckColors(val){
+ var element=document.getElementById('color');
+ if(val=='pick a color'||val=='others')
+   element.style.display='block';
+ else  
+   element.style.display='none';
+}
+
+</script> 
+<td><font color=#1F618D><b>Outcome
+ 
+ 
+ <input type="checkbox" value="Bike" onclick= "CheckColors(this.value)" name="outcome" > Patent<br>
+ <input type="checkbox" name="outcome" value="others"  onclick= "CheckColors(this.value)" > Publications<br>
+ <input type="checkbox" name="outcome" value="others"  onclick= "CheckColors(this.value)" > Others<br>
+ <input type="text" name="color" id="color" style='display:none;'/>
+ 
+<tr><td colspan=2><font color=#B03A2E>Fields with * are Mandatory</td></tr>
+</table>
+<input type="submit" value="Submit">
+</center>
+
+</form>
+</body>
+</html>
+
+
+

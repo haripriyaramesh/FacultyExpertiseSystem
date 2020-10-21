@@ -1,0 +1,47 @@
+<html>
+<head>
+
+<title>
+Courses Taught Details
+</title>
+</head>
+<body background = "college1.jpg">
+<center>
+<center><h1><font color=white>Courses Taught Details</font></h1></center>
+
+<form method="post"  action="courses.php">
+<center><table border="10" bordercolor="white" bgcolor="white">
+<tr><td colspan=2><font color=#B03A2E>Enter the details of Courses taught</td></tr>
+
+<tr>
+<td><font color=#1F618D><b>Course/subject taught for under graduate students or post graduate students*</b>
+<td><select name="ug_pg" size=3>
+<option>Under Graduate</option>UG
+<option>Post Graduate</option>PG
+<option>Others</option>others
+</select>
+</td></tr>
+<tr><td><font color=#1F618D><b>Title of the course/subject</b></font></td><td><input type=name name="title" size=5 maxlength=5></td></tr>
+<tr><td><font color=#1F618D><b>Semester</b></font></td><td><input type=name name="sem" size=3 maxlength=2></td></tr>
+<tr><td><font color=#1F618D><b>Branch</b></font></td><td><input type=name name="branch" size=20 maxlength=18></td></tr>
+<tr><td><font color=#1F618D><b>During the year</b></font></td><td><input type=name name="year" size=12 maxlength=12></td></tr>
+<tr><td><font color=#1F618D><b>Number of students in the class</b></font></td><td><input type=name name="num" size=3 maxlength=3></td></tr>
+<tr><td><font color=#1F618D><b>Pass Percentage</b></font></td><td><input type=name name="pass" size=5 maxlength=5></td></tr>
+<tr><td><font color=#1F618D><b>Course outcome(enter CO1 to CO6)through direct</b></font></td><td><input type=name name="dco1" size=2 maxlength=2><input type=name name="dco2" size=2 maxlength=2><input type=name name="dco3" size=2 maxlength=2><input type=name name="dco4" size=2 maxlength=2><input type=name name="dco5" size=2 maxlength=2><input type=name name="dco6" size=2 maxlength=2></td></tr>
+<tr><td><font color=#1F618D><b>Course outcome(enter CO1 to CO6)through indirect</b></font></td><td><input type=name name="co1" size=2 maxlength=2><input type=name name="co2" size=2 maxlength=2><input type=name name="co3" size=2 maxlength=2><input type=name name="co4" size=2 maxlength=2><input type=name name="co5" size=2 maxlength=2><input type=name name="co6" size=2 maxlength=2></td></tr>
+<tr><td><font color=#1F618D><b>Student feedback with percentage(rounded to nearest integer)</b></font></td><td><input type=name name="feedback" size=2 maxlength=2></td></tr>
+<tr><td colspan=2><font color=#B03A2E>Fields with * are Mandatory</td></tr>
+
+</table>
+
+<input type="submit" value="Submit">
+
+</center>
+
+</form>
+
+</body>
+</html>
+
+
+

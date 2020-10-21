@@ -1,0 +1,62 @@
+<html>
+<head>
+
+<title>
+Project Details
+</title>
+</head>
+<body>
+<center>
+<center><h1><font color=blue>Details of Projects Undertaken</font></h1></center>
+
+<form method="post"  action="project.php">
+<center><table border="10" bordercolor="#000099" bgcolor="lightyellow">
+<tr><td colspan=2><font color=red>Enter the details of Projects Undertaken</td></tr>
+
+
+<tr><td><font color=blue><b>Title of the Project*</b></font></td><td><input type=name name="title" size=80 maxlength=80></td></tr>
+<tr><td><font color=blue><b>Principal Investigator for the Project*</b></font></td><td><input type=name name="pi" size=50 maxlength=50></td></tr>
+<tr><td><font color=blue><b>Co-investigator of the Project(if any)</b></font></td><td><input type=name name="ci" size=50 maxlength=50></td></tr>
+
+<tr>
+<td><font color=blue><b>Status of the Project*</td>
+
+<td><select name="status" size=3>
+<option>In-progress</option>progress
+<option>Completed</option>completed
+<option>Others</option>others
+</select>
+</td></tr>
+
+
+
+<tr><td><font color=blue><b>Project start date*</b></font></td><td><input type=name name="sdate" size=12 maxlength=12></td></tr>
+<tr><td><font color=blue><b>Project completion date</b></font></td><td><input type=name name="cdate" size=12 maxlength=12></td></tr>
+
+<tr><td><font color=blue><b>Project Duration (Expected duration, if project is not completed)</b></font></td><td><input type=name name="duration" size=25 maxlength=25></td></tr>
+<tr><td><font color=blue><b>Cost of the Project*</b></font></td><td><input type=name name="cost" size=10 maxlength=10></td></tr>
+<tr><td><font color=blue><b>Associated Department</b></font></td><td><input type=name name="dept" size=25 maxlength=25></td></tr>
+<tr><td><font color=blue><b>Abstract*</b></font></td><td><input type=name name="abstract" size=100 maxlength=100></td></tr>
+<tr><td><font color=blue><b>Funding Agency*</b></font></td><td><input type=name name="agency" size=25 maxlength=25></td></tr>
+<tr><td><font color=blue><b>URL</b></font></td><td><input type=name name="url" size=50 maxlength=50></td></tr>
+<tr><td><font color=blue><b>Additional Information about the Project</b></font></td><td><input type=name name="others" size=100 maxlength=100></td></tr>
+
+
+
+<tr><td colspan=2><font color=red>Fields with * are Mandatory</td></tr>
+
+</table>
+
+<input type="submit" value="Submit">
+
+
+
+
+</center>
+
+</form>
+</body>
+</html>
+
+
+

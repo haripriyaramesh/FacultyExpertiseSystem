@@ -1,0 +1,74 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function validate()
+{
+var usn=document.getElementById("uname").value;
+//document.writeln(usn);
+
+
+submitOK="true";
+
+//var reg=/^\d{1}[R|r][V|v]\d{2}((AR|ar)|(BT|bt)|(CH|ch)|(CV|cv)|(CS|cs)|(EE|ee)|(EC|ec)|(IM|im)|(IS|is)|(IT|it)|(ME|me)|(TE|te))\d{3}$/;
+
+//var reg1=/^\d{1}[R|r][V|v]\d{2}((MCA/mca))\d{2}$/;
+
+
+
+//if (!usn.match(reg) || !usn.match(reg1))
+ //{
+ //alert("The usn must be in this format 1RV09IS001");
+ //submitOK="false";
+// }
+
+if (submitOK=="false")
+ {
+ return false;
+ }
+}
+</script>
+
+<title>
+Login
+</title>
+</head>
+<body background="college1.jpg" valign="center" bgcolor="blue"  onLoad="document.forms[0].uname.focus()">
+
+<form method="post"  action="login2.php">
+
+<center>
+
+<table border=0 valign="center" bgcolor=white><tr><td valign="center">
+<center><h2><img src="header.png" width=900 height=90></center></tr></td></table>
+<hr>
+
+<table border=0 valign="center" ><tr><td valign="center" width=50%>
+<center><h1><font color=blue><b><b>Faculty Expertise System</font></h1></center></tr></td>
+<tr><td>
+<center><h4><font color=blue><b>(Autonomous Institute under VTU)</b></font></h4></center></tr></td>
+
+
+
+<form method="post"  action="login2.php" onsubmit="return validate()">
+<tr><td>
+<center><table border=1 ><tr>
+
+<td><font color=blue><b>Username</b></font>  <font color=red><b>*</b></font></td><td><input type="text" name="uname" id="uname" size=30 maxlength=30></td><td><font color=red><b>* Means mandatory field</b></font></td></tr>
+<tr>
+
+<td><font color=blue><b>Password</b></font> <font color=red><b>*</b></font></td><td><input type="password" name="pwd" id="pwd" size=30 maxlength=30></td><td><font color=red><b>* Means mandatory field</b></font></td></tr>
+
+</table>
+
+<input type="submit" value="login">
+
+</center>
+</table></td></tr>
+</form>
+<b><a href="login.html">New User</a></b>
+
+</center>
+<hr>
+</body>
+</html>

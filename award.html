@@ -1,0 +1,47 @@
+<html>
+<head>
+
+<title>
+Faculty Awards Details
+</title>
+</head>
+<body background = "college1.jpg">
+
+<center>
+<center><h1><font color=white><br><br>Award Details</font></h1></center>
+
+<form method="post"  action="award.php" enctype="multipart/form-data">
+<center><table border="10" bordercolor="white" bgcolor="white">
+<tr><td colspan=2><font color=#B03A2E>Enter the details of awards you have recieved</td></tr>
+
+
+<tr><td><font color=#1F618D><b>Name of the Award*</b></font></td><td><input type=name name="aname" size=50 maxlength=50 requi#B03A2E></td></tr>
+<tr><td><font color=#1F618D><b>Name of Agency*</b></font></td><td><input type=name name="agency" size=80 maxlength=80></td></tr>
+<tr><td><font color=#1F618D><b>Month and year of receiving the award*</b></font></td><td><input type=name name="year" size=40 maxlength=40></td></tr>
+<tr><td><font color=#1F618D><b>url</b></font></td><td><input type=name name="url" size=100 maxlength=100></td></tr>
+ 
+<td>
+<font color=#1F618D><b>Upload the award</b></font>
+<input type="hidden" name="MAX_FILE_SIZE" value="2000000">
+<input name="userfile" type="file" id="userfile"> 
+</td>
+<td width="80"><input name="upload" type="submit" class="box" id="upload" value=" Upload "></td>
+
+<tr><td colspan=2><font color=#B03A2E>Fields with * are Mandatory</td></tr>
+
+</table>
+
+<input type="submit" value="Submit">
+
+
+
+
+</center>
+
+</form>
+
+</body>
+</html>
+
+
+
